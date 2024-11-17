@@ -1,20 +1,17 @@
-import { StyleSheet, Text, View } from "react-native";
+import { ActivityIndicator, StyleSheet, Text, View } from "react-native";
 
-export default function Home() {
+export default function StartPage() {
   return (
     <View style={styles.Container}>
-      <Text style={styles.text}>Home</Text>
+      <ActivityIndicator size={"large"} color={"gray"} />
     </View>
   );
 }
 
 const styles = StyleSheet.create({
   Container: {
-    backgroundColor: "#ff000033",
-    paddingTop: 20,
-  },
-  text: {
-    fontSize: 24,
-    textAlign: "center",
+    flex: 1,
+    justifyContent: "center",
+    alignItems: "center",
   },
 });
